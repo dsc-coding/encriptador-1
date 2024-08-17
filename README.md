@@ -35,5 +35,15 @@ Las "llaves" de encriptación que utilizaremos son las siguientes:
 
 A continuación, se muestra una captura de pantalla de la aplicación funcionando:
 
+- Ingreso Texto
 ![Vista Previa de la Aplicación](assets/vistaprevia.png)
+
+- Encriptación
+![Vista Previa de la Aplicación](assets/vistaprevia2.png)
+
+-Copia Texto Resultante
+![Vista Previa de la Aplicación](assets/vistaprevia3.png)
+
+- Desencriptado
+![Vista Previa de la Aplicación](assets/vistaprevia4.png)
 
