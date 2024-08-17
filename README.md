@@ -41,7 +41,7 @@ A continuación, se muestra una captura de pantalla de la aplicación funcionand
 - Encriptación
 ![Vista Previa de la Aplicación](assets/vistaprevia2.png)
 
--Copia Texto Resultante
+- Copia Texto Resultante
 ![Vista Previa de la Aplicación](assets/vistaprevia3.png)
 
 - Desencriptado
