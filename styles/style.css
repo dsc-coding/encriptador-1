@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Moderustic:wght@300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --color-primario: #8d99ae;
+    --color-secundario: #2b2d42;
+    --color-terciario: #edf2f4;
+    --color-cuaternario: #dee2ff;
+    --texto-estilo:"Moderustic", sans-serif;
+}
+
+*{
+    padding:0;
+    margin:0;
+    
+}
+
+body{
+    background-color: var(--color-primario);
+    box-sizing: border-box;
+     
+}
+
+.contenido{
+    display: flex;
+    justify-items: center;
+    justify-content: space-evenly;
+    padding: 3%;
+    gap:25px; 
+    font-family: var(--texto-estilo);
+    font-weight: 400;
+}
+
+.contenido__informacion{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;   
+    gap: 40px;
+    width: 60%;
+    
+    
+}
+
+.contenido__informacion__ingreso{
+    padding: 2%;
+    font-size: 2rem;
+    height: 70%;
+    background-color: var(--color-primario);  
+    color: var(--color-secundario);
+    border-style: none;
+    
+}
+
+.contenido__informacion__advertencia{
+    font-size: 0.75rem;
+    justify-content: center;
+    display: flex;
+    align-self: flex-start;
+}
+
+.contenido__informacion__botones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boton__encriptar{
+    padding: 3%;
+    border-radius: 24px;
+    font-size: 1rem;
+    width: 45%;
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+}
+
+.boton__desencriptar{
+    padding: 3%;
+    border-radius: 24px;
+    font-size: 1rem;
+    width: 45%;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+}
+
+.boton__encriptar:hover{
+    background-color: var(--color-cuaternario);
+    color: #2b2d42;
+
+}
+
+.boton__desencriptar:hover{
+    background-color: var(--color-cuaternario);
+}
+
+.contenido__resultado{
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    gap: 1.5%;
+    padding: 2%;
+    height: 80vh;
+    width: 25%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.contenido__resultado__imagen{
+    font-size: 1.5rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    height: 60%; 
+    color: var(--color-terciario);
+    align-self: center; 
+    
+}
+
+
+strong{
+    font-size: 1.5rem;
+    color: var(--color-terciario);
+    padding: 1%;
+}
+
+.contenido__resultado__texto{
+    font-size: 1rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    text-align: center;
+    color: var(--color-terciario);
+}
+
+.resaltado{
+    background-color: blue;
+}
+
+.contenido__resultado__boton{
+    position: absolute;
+    bottom: 0;
+    margin: 24px;
+    padding: 3.7%;
+    width: 70%;
+    background-color: var(--color-terciario);
+    color: var(--color-secundario);
+    border-radius: 24px;
+    font-size: 1rem;
+}
+
+.contenido__resultado__boton:hover{
+    background-color: var(--color-cuaternario);
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-family: var(--texto-estilo);
+    background-color: var(--color-secundario);
+    color: var(--color-cuaternario);
+}
+
+@media(max-width: 800PX){
+    
+    .logo{
+        align-self: flex-start;
+    }
+
+    .contenido{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contenido__informacion{
+        height: 430px;
+        width: 80%;
+    }
+    
+   
+
+    .contenido__resultado{
+        width: 80%; 
+        height: max-content;
+        gap: 4%; 
+        
+    }
+    
+    .imagen__encriptar{
+        display: none;
+    }
+
+    .contenido__resultado__encriptado{
+        width: 100%;
+        padding: 1.5%;
+    }
+
+    .contenido__resultado__boton{
+        margin: 1px;
+        padding: 1.5%;
+        width: 80%;
+        position: relative;
+        align-self: center;
+    }
+   
+}
+
+@media(max-width: 395PX){
+    
+    .contenido__informacion__botones{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .boton__encriptar{
+        width: 100%;
+    }
+
+    .boton__desencriptar{
+        width: 100%;
+    }
+}
